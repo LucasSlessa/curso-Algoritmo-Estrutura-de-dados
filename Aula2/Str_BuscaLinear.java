@@ -24,6 +24,7 @@ public class Str_BuscaLinear {
 
         @SuppressWarnings("resource")
         Scanner Leitor = new Scanner(System.in);
+        System.out.println(Leitor);
 
         System.out.println("Qual sigla de estado voce quer buscar: ");
         String Busca = Leitor.nextLine().toUpperCase();
