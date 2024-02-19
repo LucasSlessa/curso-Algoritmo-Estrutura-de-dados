@@ -11,7 +11,7 @@ public class vetor {
         vetor[2] = 3;
 
         // imprimindo individualmente
-        System.out.println("vetor " + vetor[0]);
+        System.out.println("vetor  " + vetor[0]);
 
         // imprimindo todos
 
