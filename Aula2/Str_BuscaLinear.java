@@ -22,10 +22,11 @@ public class Str_BuscaLinear {
 
         // Busca
 
-        Scanner leitor = new Scanner(System.in);
+        @SuppressWarnings("resource")
+        Scanner Leitor = new Scanner(System.in);
 
         System.out.println("Qual sigla de estado voce quer buscar: ");
-        String Busca = leitor.nextLine().toUpperCase();
+        String Busca = Leitor.nextLine().toUpperCase();
 
         // busca linear
         boolean encontrou = false;
