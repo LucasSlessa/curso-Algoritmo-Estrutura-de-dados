@@ -1,4 +1,4 @@
-package aula1;
+package Aula1;
 
 public class vetor {
 
