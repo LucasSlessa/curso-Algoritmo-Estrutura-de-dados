@@ -17,4 +17,4 @@ o nosso vetor armazenado o valor da posição atual co referencia na variavel i.
 Apos foi feito um algortimo pra impressao onde usamos uma variavel do tipo **Boolean** pra auxilar na verificação caso encontremos o valor
 a variavel se torna True e fazemos um **BREAK** que sera responsavel por sair do for e evitar processamento extra.
 
--[x] Aula concluida com successo
+- [x] Aula concluida com successo
