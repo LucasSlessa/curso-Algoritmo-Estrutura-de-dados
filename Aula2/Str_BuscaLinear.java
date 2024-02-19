@@ -45,7 +45,7 @@ public class Str_BuscaLinear {
         if (encontrou == true) {
             System.out.println("Estado encontrado !!");
         } else {
-            System.out.println("Estado nao econtrado");
+            System.out.println("Estado nao econtrado!!");
         }
 
     }
