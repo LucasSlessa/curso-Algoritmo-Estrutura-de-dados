@@ -8,7 +8,7 @@ Esta aulas serão compostas apenas de codigos para referencia de funcionamento d
 
 ## Quais quer duvidas faça um fork e depois um pull requeste em uma branch de Duvidas
 
-[x] O objetivo deste curso e aplicar conhecimentos de git e Aprender estruturas de dados como consequencia disso.
+- [x] O objetivo deste curso e aplicar conhecimentos de git e Aprender estruturas de dados como consequencia disso.
 
 > O foco de tudo isso é aplicar os conhecimentos na prática
 
