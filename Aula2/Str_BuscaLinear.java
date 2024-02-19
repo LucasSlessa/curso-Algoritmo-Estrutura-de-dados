@@ -20,7 +20,7 @@ public class Str_BuscaLinear {
             System.out.println("estado " + i + " = " + estados[i]);
         }
 
-        // Busca
+        // Busca simples
 
         @SuppressWarnings("resource")
         Scanner Leitor = new Scanner(System.in);
