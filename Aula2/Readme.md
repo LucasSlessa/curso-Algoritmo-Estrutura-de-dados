@@ -18,3 +18,4 @@ o nosso vetor armazenado o valor da posição atual co referencia na variavel i.
 a variavel se torna True e fazemos um **BREAK** que sera responsavel por sair do for e evitar processamento extra.
 
 - [x] Aula concluida com successo
+Obrigado por acompanhar
