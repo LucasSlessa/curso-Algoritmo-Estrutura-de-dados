@@ -1,6 +1,6 @@
 package Aula1;
 
-public class vetor {
+public class Vetor {
 
     public static void main(String[] args) {
 
