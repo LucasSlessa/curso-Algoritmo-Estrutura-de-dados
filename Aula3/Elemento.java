@@ -3,18 +3,18 @@ package Aula3;
 public class Elemento {
 
     private String valor;
-    private String proximo;
+    private Elemento proximo;
 
     public Elemento(String novoValor) {
         this.valor = novoValor;
 
     }
 
-    public String getProximo() {
+    public Elemento getProximo() {
         return proximo;
     }
 
-    public void setProximo(Elemento novoElemento) {
+    public void setProximo(Elemento proximo) {
         this.proximo = proximo;
     }
 
