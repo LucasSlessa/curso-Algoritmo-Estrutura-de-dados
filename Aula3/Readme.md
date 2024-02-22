@@ -43,34 +43,78 @@ classe ListaLigada será a estrutura que organiza os `Elementos`. Ela deve ser c
 
 ```java
 
+ppackage Aula3;
+
 public class ListaLigada {
-    private Elemento cabeca;
 
+    private Elemento primeiro;
+    private Elemento ultimo;
+    private int tamanho;
+
+    // construtor
     public ListaLigada() {
-        this.cabeca = null;
+        this.tamanho = 0;
     }
 
-    public void adicionar(int valor) {
-        if (this.cabeca == null) {
-            this.cabeca = new Elemento(valor);
+    // metodos da lista
+
+    public void adicionar(String novoValor) {
+        Elemento novoElemento = new Elemento(novoValor);
+        if (this.primeiro == null && this.ultimo == null) {
+            this.primeiro = novoElemento;
+            this.ultimo = novoElemento;
+            this.tamanho++;
         } else {
-            Elemento atual = this.cabeca;
-            while (atual.proximo != null) {
-                atual = atual.proximo;
-            }
-            atual.proximo = new Elemento(valor);
+            this.ultimo.setProximo(novoElemento);
+            this.ultimo = novoElemento;
+            this.tamanho++;
         }
+
     }
 
-    public void imprimir() {
-        Elemento atual = this.cabeca;
-        while (atual != null) {
-            System.out.print(atual.valor + " -> ");
-            atual = atual.proximo;
+    public Elemento get(int posição) {
+        Elemento atual = this.primeiro;
+
+        for(int i=0; i < posição; i++){
+            if(atual.getProximo() != null){
+                atual = atual.getProximo();
+            }
+
         }
-        System.out.println("null");
+        return atual;
+
     }
+
+    public void remover(String valorProcurado) {
+        Elemento anterior = null;
+        Elemento atual = this.primeiro;
+        for(int i=0; i<this.getTamanho();i++)   {
+           
+            if(atual.getValor().equalsIgnoreCase(valorProcurado)){
+                if(atual == primeiro){  
+                    this.primeiro = atual.getProximo();
+                    atual.setProximo(null);
+
+                }else if(atual == ultimo){
+                    this.ultimo = anterior;
+                    anterior.setProximo(null);
+                }else{
+                    anterior.setProximo(atual.getProximo());
+                    atual = null;
+                }
+
+                this.tamanho--;
+                break;
+            }
+            anterior = atual;
+            atual = atual.getProximo();
+            
+        } 
+
+    }
+
 }
+
 
 
 ```
