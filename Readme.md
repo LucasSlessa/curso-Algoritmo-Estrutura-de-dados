@@ -12,6 +12,6 @@ Estas aulas serão compostas apenas de codigos para referencia de funcionamento 
 
 - [x] O objetivo deste curso e aplicar conhecimentos de git e Aprender estruturas de dados como consequencia disso.
 
-> O foco de tudo isso é aplicar os conhecimentos na prática
+> O foco de tudo isso é aplicar os conhecimentos na prática e aprender Estrutura de dados
 
 **Em Breve materiais de Teoria Pra auxiliar no aprendizado**
