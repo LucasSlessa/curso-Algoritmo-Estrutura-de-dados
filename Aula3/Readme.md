@@ -31,3 +31,46 @@ public class Elemento {
         this.proximo = null;
     }
 }
+```
+
+Atributos:
+valor: O dado armazenado no elemento.
+proximo: A referência para o próximo Elemento na lista.
+
+
+### Classe `ListaLigada`
+classe ListaLigada será a estrutura que organiza os `Elementos`. Ela deve ser capaz de adicionar elementos, remover elementos e fornecer acesso a eles.
+
+```java
+
+public class ListaLigada {
+    private Elemento cabeca;
+
+    public ListaLigada() {
+        this.cabeca = null;
+    }
+
+    public void adicionar(int valor) {
+        if (this.cabeca == null) {
+            this.cabeca = new Elemento(valor);
+        } else {
+            Elemento atual = this.cabeca;
+            while (atual.proximo != null) {
+                atual = atual.proximo;
+            }
+            atual.proximo = new Elemento(valor);
+        }
+    }
+
+    public void imprimir() {
+        Elemento atual = this.cabeca;
+        while (atual != null) {
+            System.out.print(atual.valor + " -> ");
+            atual = atual.proximo;
+        }
+        System.out.println("null");
+    }
+}
+
+
+```
